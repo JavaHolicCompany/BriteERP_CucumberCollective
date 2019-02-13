@@ -9,13 +9,13 @@ import org.junit.runner.RunWith;
             plugin ={
                     "html:target/cucumber_reports"
             },
-            features = "src/test/resources/zulhumarFestures",
+            features = "src/test/resources",
             glue = "stepDefinitions",
             dryRun = true,
             tags = "@configuration"
 
     )
-    public class ZulhumarRunner {
+    public class CukesRunner {
 
     }
 
