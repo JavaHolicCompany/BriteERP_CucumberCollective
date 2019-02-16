@@ -32,18 +32,17 @@ public class HomePage {
     @FindBy(xpath = "(//button[@class='btn btn-primary'])")
     public WebElement SignInButton;
 
-    @FindBy(xpath = "(//li[@style='display: block;'])[6]")
-    public WebElement InventoryPage;
 
 
-    public static void log(){
-        HomePage homePage =new HomePage();
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
-        homePage.DatabaseDropDown.click();
-        homePage.username.sendKeys(ConfigurationReader.getProperty("username"));
-        homePage.password.sendKeys(ConfigurationReader.getProperty("password"));
-        homePage.SignInButton.click();
-        homePage.InventoryPage.click();
-    }
+
+//    public static void log(){
+//        HomePage homePage =new HomePage();
+//        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+//        homePage.DatabaseDropDown.click();
+//        homePage.username.sendKeys(ConfigurationReader.getProperty("username"));
+//        homePage.password.sendKeys(ConfigurationReader.getProperty("password"));
+//        homePage.SignInButton.click();
+//        homePage.InventoryPage.click();
+//    }
 
 }

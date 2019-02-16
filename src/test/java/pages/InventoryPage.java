@@ -11,6 +11,12 @@ public class InventoryPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+    @FindBy(xpath = "(//li[@style='display: block;'])[6]")
+    public WebElement Inventory;
+
+    @FindBy(css = "span[class ='oe_topbar_name']")
+    public WebElement type;
+
     @FindBy(xpath = "/html/body/div[1]/div[1]/div[1]/div[6]/div[1]/a/span")
     public WebElement Dashborad;
 
