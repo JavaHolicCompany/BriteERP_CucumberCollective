@@ -1,4 +1,4 @@
- @BRIT-4026
+ @BRIT-4026 @export
 Feature: Export function
 
   Background:from homepage to login page
