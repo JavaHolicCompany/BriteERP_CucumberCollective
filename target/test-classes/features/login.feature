@@ -1,4 +1,4 @@
-@BRIT-546 @login
+@BRIT-546
 Feature: login function
 
 # open chrome
@@ -12,17 +12,17 @@ Feature: login function
     When user enters "inm5@info.com" and  "trt332qWW12"
     Then user should be logged in as a "<type>"
 
-
   @InventoryUser
   Scenario: login as a Inventory User
     When user enters "in3@info.com" and  "alsfuh7we72"
     Then user should be logged in as a "<type>"
 
 
-
+  @login
   Scenario Outline: login as different <type>
     When user enters "<email>" and  "<password>"
     Then user should be logged in as a "<type>"
+    And user logs out
 
 
     Examples:
