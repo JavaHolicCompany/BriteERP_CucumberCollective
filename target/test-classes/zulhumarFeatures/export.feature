@@ -7,7 +7,7 @@ Feature: Export function
     Then user should be in login page
 
   Scenario: Export module
-    When user enters "inm5@info.com" and "trt332qWW12"
+    When user enters "inm5@info.com" and  "trt332qWW12"
     Then user in inventory page
     And user clicks on Warehouse management
     Then user should see Warehouses option
