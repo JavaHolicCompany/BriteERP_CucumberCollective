@@ -5,12 +5,14 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.ConfigurationPage;
 import pages.InventoryPage;
+import utilities.BrowserUtils;
 import utilities.ConfigurationReader;
 
 public class ExportStepDef {
     @Given("user in inventory page")
     public void user_in_inventory_page() {
         InventoryPage inventoryPage = new InventoryPage();
+        BrowserUtils.wait(5);
         inventoryPage.Inventory.click();
     }
 

@@ -21,6 +21,7 @@ public class Hooks {
         Driver.getDriver().manage().window().maximize();
     }
 
+
     @After
     public void tearDown(Scenario scenario){
         System.out.println("I am reporting the results of the test");
